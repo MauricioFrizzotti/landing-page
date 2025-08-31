@@ -4,11 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing-Page</title>
+    <title>Landing Page Responsive</title>
 </head>
 
 <body>
-
+    <header class="header">
+        <nav class="nav-container">
+            <h1>Mi Marca</h1>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#suscripcion">Suscripción</a></li>
+            </ul>
+        </nav>
+        <div class="hero container fade-in">
+            <h2>Bienvenido a la mejor Landing Page</h2>
+            <p>Diseñada con HTML, CSS y JavaScript</p>
+            <a href="#contacto">Suscríbete</a>
+        </div>
+    </header>
+    <section id="features" class="features container">
+        <h2>Nuestras Características</h2>
+        <div class="grid-features">
+            <div class="card fade-in">
+                <h3>Responsive</h3>
+                <p>Se adapta a cualquier dispositivo gracias al diseño mobile-first</p>
+            </div>
+            <div class="card fade-in">
+                <h3>Animaciones</h3>
+                <p>Efectos CSS como hover, fade-in y scroll</p>
+            </div>
+            <div class="card fade-in">
+                <h3>Fácil Deploy</h3>
+                <p>Compatible con Github Pages</p>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="form-section container">
+        <h2>Suscríbete</h2>
+        <form id="suscribeForm">
+            <input type="email" id="email" placeholder="Tu correo eléctronico" required>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Mi Marca - Todos los derechos reservados</p>
+    </footer>
 </body>
 
 </html>
